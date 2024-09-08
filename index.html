@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto tracker App</title>
+    <script src="https://kit.fontawesome.com/a7ca25f3b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <nav>
-        <div class="left-nav"></div>
-        <div class="right-nav"></div>
+        <div class="left-nav"><a href="/" class="title">Crypto Tracker</a></div>
+        <div class="right-nav">
+            <a href="/"  class="nav-items">Home</a>
+            <a href="./favorites.html" class="nav-items">Favorites</a>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i> <input type="text" id="search-box" placholder="search"/>
+            </div>
+        </div>
     </nav>
+    <main>
+        <table id="table-crypto">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Volume</th>
+                    <th>Market Cap</th>
+                    <th>favorites</th>
+                </tr>
+            </thead>
+
+        </table>
+        <section id="pagination">
+            <button id="prev-btn">prev</button>
+            <button id="next-btn">next</button>
+        </section>
+    </main>
    <script src="'./app.js" ></script>
 </body>
 </html>
